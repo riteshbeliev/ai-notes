@@ -46,7 +46,10 @@ class NoteController extends Controller
     public function index(): JsonResponse
     {
         try {
-            $limit = request()->get('limit', 10);
+            $limit = request()->integer('limit', 10);
+            $limit = max(1, min($limit, 100));
+
+            //$limit = request()->get('limit', 10);
 
             $notes = Note::latest()->paginate($limit);
 

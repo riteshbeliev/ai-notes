@@ -40,10 +40,17 @@ class NoteSearchController extends Controller
 
         foreach ($notes as $note) {
 
-            $embedding = json_decode($note->embedding, true);
+            // $embedding = json_decode($note->embedding, true);
+            
+            // if (!$embedding) {
+            //     continue;
+            // }
 
-            if (!$embedding) {
-                continue;
+
+            $embedding = is_string($note->embedding) ? json_decode($note->embedding, true) : $note->embedding;
+
+            if (!is_array($embedding)) {
+                return null;
             }
 
             $score = $this->vectorSearch->cosineSimilarity(

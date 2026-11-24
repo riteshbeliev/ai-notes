@@ -1,8 +1,8 @@
 # 🤖 AI Notes - Laravel + Gemini AI
 
-> AI-powered Notes Management System built with Laravel 12, Google Gemini AI, and Tailwind CSS.
+> AI-powered Notes Management System built with Laravel 13, Google Gemini AI, and Tailwind CSS.
 
-![Laravel](https://img.shields.io/badge/Laravel-12-red)
+![Laravel](https://img.shields.io/badge/Laravel-13-red)
 ![PHP](https://img.shields.io/badge/PHP-8.3-blue)
 ![Gemini](https://img.shields.io/badge/Google-Gemini-purple)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -87,7 +87,7 @@ Swagger/OpenAPI documentation
 
 - Laravel 13
 - PHP 8.3
-- MySQL
+- SQLite
 - REST API
 - Service Layer Architecture
 
