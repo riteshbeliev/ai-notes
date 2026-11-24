@@ -166,6 +166,18 @@ Resource
 JSON Response
 ```
 
+### Testing
+
+- The project includes automated PHPUnit tests for:
+- Note CRUD operations
+- Gemini summary generation
+- Embedding generation
+- Note business logic
+- Semantic search
+- Vector similarity calculations
+- Run the complete test suite:
+- php artisan test
+
 ### Components
 
 - Controllers handle HTTP requests.
